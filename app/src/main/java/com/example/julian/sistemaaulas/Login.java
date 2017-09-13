@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -28,10 +29,16 @@ public class Login extends AppCompatActivity {
                 String stringSenha = senha.getText().toString();
                 if(stringLogin.equals("julian") && stringSenha.equals("123")){
                     Intent intent = new Intent(Login.this,TelaInicial.class);
+                    intent.putExtra("Nome", stringLogin);
                     startActivity(intent);
-                }
+                }else
+                    alert("Login e senha não conferem!");
             }
         };
+    }
+
+    public void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
 }
