@@ -19,7 +19,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerVertical="true"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        android:id="@+id/linearLayout">
 
         <TextView
             android:id="@+id/txtNome"
@@ -30,7 +31,7 @@
             android:textColor="@android:color/white"/>
 
         <EditText
-            android:id="@+id/edtNome"
+            android:id="@+id/edtNomeCad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -42,13 +43,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:layout_below="@id/edtNome"
+            android:layout_below="@id/edtNomeCad"
             android:layout_marginTop="8dp"
             android:text="Senha"
             android:textColor="@android:color/white"/>
 
         <EditText
-            android:id="@+id/edtSenha"
+            android:id="@+id/edtSenhaCad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtsenha"
@@ -58,12 +59,22 @@
             android:id="@+id/entrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/edtSenha"
+            android:layout_below="@id/edtSenhaCad"
             android:layout_marginTop="8dp"
             android:text="Entrar"
             android:onClick="avancar"
             android:textSize="20dp"/>
 
     </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:text="Salvar dados de acesso"
+        android:textSize="20dp"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
