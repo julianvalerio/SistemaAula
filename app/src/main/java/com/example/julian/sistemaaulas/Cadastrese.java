@@ -33,7 +33,9 @@ public class Cadastrese extends AppCompatActivity {
                 String senhaString = senha.getText().toString();
                 String resultado;
 
-                resultado = cadastra.insereDado(nomeString, emailString,dataNascString,senhaString);
+
+                resultado = cadastra.insereDado(nomeString,
+                        emailString,dataNascString,senhaString);
 
                 Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
             }

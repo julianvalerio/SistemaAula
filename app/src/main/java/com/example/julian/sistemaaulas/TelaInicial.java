@@ -1,5 +1,6 @@
 package com.example.julian.sistemaaulas;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +26,19 @@ public class TelaInicial extends AppCompatActivity implements View.OnClickListen
             String valor = bundle.getString("Nome");
             edtValor.setText(valor+", Seja bem vindo!");
         }
+
+        Button listar = (Button)findViewById(R.id.btnListar);
+        listar.setOnClickListener(onClickListar());
+    }
+
+    private View.OnClickListener onClickListar() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaInicial.this,ListaUsuariosCadastrados.class);
+                startActivity(intent);
+            }
+        };
     }
 
     public void onClick(View v)
