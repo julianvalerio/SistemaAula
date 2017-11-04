@@ -27,7 +27,8 @@
         <activity android:name=".TelaInicial" />
         <activity android:name=".Cadastrese" />
         <activity android:name=".teste" />
-        <activity android:name=".ListaUsuariosCadastrados"></activity>
+        <activity android:name=".ListaUsuariosCadastrados" />
+        <activity android:name=".AlterarDados"></activity>
     </application>
 
 </manifest>
