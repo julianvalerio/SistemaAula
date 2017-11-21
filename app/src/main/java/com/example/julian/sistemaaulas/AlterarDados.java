@@ -30,6 +30,7 @@ public class AlterarDados extends AppCompatActivity {
 
         Button alterar = (Button)findViewById(R.id.btnConfirmar);
         Button excluir = (Button)findViewById(R.id.btnexcluir);
+        Button enviarMsg = (Button)findViewById(R.id.btnEnviar);
 
         Cursor cursor = controle.carregaDadosPorID(Integer.parseInt(IdUsuario));
         Nome.setText(cursor.getString(cursor.getColumnIndexOrThrow("nome")));
@@ -39,7 +40,9 @@ public class AlterarDados extends AppCompatActivity {
         
         alterar.setOnClickListener(onClickAlterar());
         excluir.setOnClickListener(onClickExcluir());
+
     }
+    
 
     private View.OnClickListener onClickExcluir() {
         return new View.OnClickListener() {

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "398260954188",
+    "firebase_url": "https://sistemaaula-57f3a.firebaseio.com",
+    "project_id": "sistemaaula-57f3a",
+    "storage_bucket": "sistemaaula-57f3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398260954188:android:44ba71a255715c27",
+        "android_client_info": {
+          "package_name": "com.example.julian.sistemaaulas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398260954188-4vmn3lnasbafl6kkh38tf2at8vvpr3f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9lOS2Ce862GkTqMGL3MrsfncXTkfkwQ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
